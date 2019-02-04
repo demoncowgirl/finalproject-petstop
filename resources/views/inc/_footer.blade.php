@@ -5,7 +5,7 @@
       <!-- Grid column -->
       <div class="col-sm-6 mt-md-0 mt-4">
         <!-- Content -->
-        <h5 class="text-uppercase">Pet Stop</h5>
+        <h5 class="text-uppercase">Beth's Nautral Pets</h5>
         <p>For help with the website, call 800-123-4567.</p>
       </div>
       <!-- <hr class="clearfix w-100 d-md-none pb-1">

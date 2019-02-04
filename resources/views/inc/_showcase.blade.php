@@ -1,6 +1,6 @@
 <div class="container-fluid d-flex justify-content-center text-center">
   <div id="showcase">
-    <h1>Welcome to Pet Stop</h1>
+    <h1>Welcome to Beth's Natural Pets</h1>
     <h2 class="lead">The convenient, one-stop-shop for pet lovers</h2>
   <!-- <div class="images align-middle"> -->
 

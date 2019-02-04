@@ -2,6 +2,19 @@
 
 $DATABASE_URL = parse_url(getenv("DATABASE_URL"));
 
+  $url = 'mysql://b6045f6dafccaf:39e4ad1d@us-cdbr-iron-east-03.cleardb.net/heroku_312c9b6350b65e0?reconnect=true';
+  // $url='postgres://uypffdrfkfdnsl:2c1dd49d2dc287f817244bc773ebe6f50ad7728c2b65c81592816a2132155453@ec2-54-235-67-106.compute-1.amazonaws.com:5432/dev8pffq9pkh6j';
+  // $url = parse_url(getenv("DATABASE_URL"));
+  // $host = $url['host'];
+  // $username = $url['user'];
+  // $password = $url['pass'];
+  // $database = substr($url["path"], 1);
+  $host = 'us-cdbr-iron-east-03.cleardb.net';
+  $username = 'b6045f6dafccaf';
+  $password = '39e4ad1d';
+  $database = 'heroku_312c9b6350b65e0';
+
+
 return [
 
     /*
@@ -43,11 +56,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'us-cdbr-iron-east-03.cleardb.net'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => env('DB_DATABASE', 'heroku_312c9b6350b65e0'),
+            'username' => env('DB_USERNAME', 'b6045f6dafccaf'),
+            'password' => env('DB_PASSWORD', '39e4ad1d'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -56,18 +69,18 @@ return [
             'engine' => null,
         ],
 
-        'pgsql' => [
-            'driver' => 'pgsql',
-            'host' => $DATABASE_URL['host'],
-            'port' => $DATABASE_URL['port'],
-            'database' => ltrim($DATABASE_URL['path'], "/"),
-            'username' => $DATABASE_URL['user'],
-            'password' => $DATABASE_URL['pass'],
-            'charset' => 'utf8',
-            'prefix' => '',
-            'schema' => 'public',
-            'sslmode' => 'prefer',
-        ],
+        // 'pgsql' => [
+        //     'driver' => 'pgsql',
+        //     'host' => $DATABASE_URL['host'],
+        //     'port' => $DATABASE_URL['port'],
+        //     'database' => ltrim($DATABASE_URL['path'], "/"),
+        //     'username' => $DATABASE_URL['user'],
+        //     'password' => $DATABASE_URL['pass'],
+        //     'charset' => 'utf8',
+        //     'prefix' => '',
+        //     'schema' => 'public',
+        //     'sslmode' => 'prefer',
+        // ],
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',

@@ -1,4 +1,4 @@
-<nav class="navbar-inverse navbar-toggleable-md navbar-expand-md" style="border: none; height: 110px;">
+<nav class="navbar-inverse navbar-toggleable-md navbar-expand-md" style="border: none; margin: 0px; width: 100%; height: 110px;">
   <div class = "container-fluid">
     <div class="navbar-header">
       <a class ="navbar-brand" href="{{ url('/') }}">

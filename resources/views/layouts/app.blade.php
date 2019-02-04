@@ -13,7 +13,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <title>{{ config('app.name', 'Pet Stop') }}</title>
+    <title>Beth's Natural Pets @yield('title')</title>
 
     <style type="text/css">
 
@@ -21,19 +21,20 @@
 
 </head>
 <body>
-
-  <div id="app">
+<div class="container">
+  <div id="app" class="d-flex flex-column">
       <!-- provides navbar on every page -->
       @include('inc._navbar')
 
-    	@if(Request::is('/home'))
+    	<!--@if(Request::is('/home'))
         <!-- include showcase only on home page -->
-      	 @include('inc._showcase')
-      @endif
+      	 <!--@include('inc._showcase')
+      @endif-->
 
       <!-- includes footer -->
       @include('inc._footer')
   </div>
+</div>
 
   @yield('content')
 

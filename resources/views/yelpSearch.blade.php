@@ -1,10 +1,10 @@
 @extends('layouts.services')
 <!--
-@section('title', 'Vet Search') -->
+@section('title', 'Pet Search') -->
 
 @section('content')
 <h1>Veterinary Search</h1>
 <div id="results">
-  <vetapi><vetapi>
+  <yelpapi><yelpapi>
 </div>
 @endsection
