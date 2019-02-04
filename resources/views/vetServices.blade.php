@@ -7,4 +7,4 @@
 <div id="results">
   <vetapi><vetapi>
 </div>
-@endsection
+@endsections
