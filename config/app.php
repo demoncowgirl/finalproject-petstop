@@ -163,7 +163,6 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Illuminate\Foundation\Application::class,
          // this is needed for Laravel Collective to work
         Collective\Html\HtmlServiceProvider::class,
         /*
